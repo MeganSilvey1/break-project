@@ -1,0 +1,14 @@
+#Python code for Break Project
+
+import time
+import webbrowser
+
+counter = 0
+
+print("This program started at"+time.ctime())
+
+#The program will run every 2 hours for 4 occurences
+while(counter < 4):
+    time.sleep(2*60*60)
+    webbrowser.open("https://www.youtube.com/watch?v=3tmd-ClpJxA")
+    counter = counter + 1
